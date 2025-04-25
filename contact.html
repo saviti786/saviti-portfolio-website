@@ -1,0 +1,82 @@
+<!-- 
+ PROJECT 4 - WEBSITE DEVELOPMENT AND DEPLOYMENT
+ AUTHOR - SAVITI SAVITI
+ DATE - APRIL 21, 2025
+ DESCRIPTION - WRITING HTML TO MAKE THE CONTACT PAGE FOR PORTFOLIO WEBSITE
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="portfolio.js"></script>
+</head>
+<body>
+    <div id="main_container">
+
+        <header id="header-content">
+            <h1 id="logo">SAVITI</h1>
+            <nav id="navigation">
+                <ul>
+                <li><a href="index.html">HOMEPAGE</a></li> 
+                <li><a href="skills.html">MY SKILLS</a></li>
+                <li><a href="contact.html">CONTACT ME</a></li> 
+                </ul>
+            </nav>
+        </header>
+
+        <div id="main-content">
+            <main>
+                <h1 id="contact-me">Have a project in mind or just want to say hi? I’d love to hear from you.</h1>
+                <div id="form-content">
+                    <form action="index.html" method="post" id="contact">
+                        <fieldset>
+                            <ul>
+                                <li>
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" id="fullName" name="fullName">
+                                    <p class="infoError error" id="fullName_error">* Required field</p>
+                                </li>
+                                <li>
+                                    <label for="email">Email</label>
+                                    <input id="email" name="email" type="email" placeholder="Ex. jdoe@gmail.com">
+                                    <p class="infoError error" id="email_error">* Required field </p>
+                                    <p class="infoError error" id="emailformat_error">* Invalid email address </p>
+                                </li>
+                                <li>
+                                    <label for="number">Contact Number</label>
+                                    <input id="number" name="number" type="number">
+                                    <p class="infoError error" id="number_error">* Required field </p>
+                                    <p class="infoError error" id="numberLength_error">* Invalid phone number </p>
+                                </li>
+                                <li>
+                                    <label for="message">Your Message</label>
+                                    <textarea name="message" id="message" rows="6" cols="30" placeholder="Write your message here!"></textarea>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <div id="submit-reset">
+                        <button type="submit" id="submit">Submit form</button>
+					    <button type="reset" id="clear">Clear details</button>
+                        </div>
+                    </form>
+                </div>
+            </main>
+
+            <footer>
+                <ul id="footer-content">
+                    <li><a href="index.html"><img src="homepage.png" alt="HOMEPAGE"></a></li>
+                    <li><a href="skills.html"><img src="skills.png" alt="SKILLS"></a></li>
+                    <li><a href="contact.html"><img src="contact.png" alt="CONTACT"></a></li>
+                </ul>
+                <p>Copyright &copy; 2025 Saviti</p>
+            </footer>
+        </div>
+
+     </div>
+</body>
+</html>
